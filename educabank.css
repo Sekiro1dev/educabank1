@@ -5,15 +5,17 @@
     font-family: Verdana, Geneva, Tahom+a, sans-serif;
 }
 
+/* Seção do header*/
 header {
 
-    background-color: #027fe9;
+    background-color: #617eba;
     padding: 30px;
 
 }
 
 
-.listheader,a {
+.listheader,
+a {
 
     text-decoration: none;
     color: white;
@@ -34,8 +36,88 @@ header {
     transition: 0.8s;
 }
 
+/* Fim dá sessão header*/
+/*começo dá sessão 1 mainborde*/
 .sessao1 {
 
+    padding: 150px;
+    width: auto;
+    background: linear-gradient(180deg, #027fe9 8.33%, #00caf8 100%);
 
-    
 }
+
+.sessao1 h1 {
+    font-size: 60px;
+    color: rgba(0, 0, 0, 0.712);
+}
+
+.sessao1 p {
+    font-size: 35px;
+}
+
+.botao {
+
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 15px;
+    border-color: #00caf8;
+    color: #00caf8;
+    width: 25%;
+
+}
+
+.botao:hover {
+
+    color: white;
+    background-color: rgb(19, 153, 108);
+    transition: 0.8s;
+    border-color: white;
+
+}
+
+/*fim dão sessão 1*/
+
+/*sessão 2 app*/
+
+.app {
+
+    display: flex;
+    justify-content: space-around;
+    padding: 200px;
+    background-color: white;
+    gap: 15px;
+
+}
+
+.app a button {
+
+    padding: 25px;
+    border-radius: 50px;
+    color: #00caf8;
+    border-color: #00caf8;
+    margin: 30px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.botao:hover {
+
+    color: white;
+    background-color: rgb(19, 153, 108);
+    transition: 0.8s;
+    border-color: white;
+}
+.app p {
+
+font-size: 25px;
+
+}
+
+.app img {
+
+    width: 350px;
+
+}
+
+/*Fim de sessao 2 app*/
