@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahom+a, sans-serif;
+}
+
+header {
+
+    background-color: #027fe9;
+    padding: 30px;
+
+}
+
+
+.listheader,a {
+
+    text-decoration: none;
+    color: white;
+
+}
+
+.listheader {
+
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    align-items: center;
+
+}
+
+.listheader>li>a:hover {
+    color: #5015bd;
+    transition: 0.8s;
+}
+
+.sessao1 {
+
+
+    
+}
