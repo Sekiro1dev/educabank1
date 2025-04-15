@@ -87,7 +87,7 @@ a {
     padding: 200px;
     background-color: white;
     gap: 15px;
-
+    background-color: rgba(0, 0, 0, 0.212);
 }
 
 .app a button {
@@ -101,16 +101,18 @@ a {
     cursor: pointer;
 
 }
-.botao:hover {
+
+.button:hover {
 
     color: white;
     background-color: rgb(19, 153, 108);
     transition: 0.8s;
     border-color: white;
 }
+
 .app p {
 
-font-size: 25px;
+    font-size: 30px;
 
 }
 
@@ -121,3 +123,145 @@ font-size: 25px;
 }
 
 /*Fim de sessao 2 app*/
+/*sessão 3 history*/
+.history {
+    background-color: rgba(0, 0, 0, 0.253);
+    padding: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.history h2 {
+    color: #3d0a49;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 25px;
+
+}
+
+.history p {
+    
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.712);
+    font-size: 25px;
+    margin-top: 30px;
+    text-align: justify;
+
+}
+
+.butao {
+
+    padding: 15px;
+    border-radius: 50px;
+    color: #00caf8;
+    border-color: #5015bd;
+    margin: 30px;
+    font-size: 15px;
+    cursor: pointer;
+   width: 300px;
+
+
+}
+
+.butao:hover {
+
+    color: white;
+    background-color: #00caf8;
+    transition: 0.8s;
+    border-color: white;
+}
+
+.line { 
+    
+    margin: 0 auto;
+    width: 90%;
+
+}
+
+.history img {
+   margin-left: 160px;
+   margin-top: 25px;
+   width: 600px;
+}
+
+/*fim sessao history*/
+
+/*apagar mais tarde */
+
+#container-cofre { /*Aqui começamos a estilizar nossa quarta section*/
+    background: linear-gradient(180deg, #0c16a364 8.33%, rgba(5, 39, 101, 0.745) 100%), url(imagens/img\ cofre\ fundo.jpg); /*Atribuimos antes da imagem uma cor para que fique sobreposta a imagem que está ao lado*/
+    background-position: center; /*posicionamento da imagem*/
+    background-attachment: fixed; /*Posicionamento fixo da imagem*/
+    padding: 10%; /*altura da section*/
+    display: flex; /*Habilitando os itens lado a lado*/
+    align-items: center; /*Alinhando os itens ao centro*/
+    justify-content: space-evenly;
+ }
+ 
+ 
+ #container-cofre img { /*Chamamos nossa IMG para estilização*/
+     width: 25vw; /*Largura da img*/
+     margin-top: 10rem; /*Margem superior*/
+     height: auto;
+     flex-wrap: wrap; /*Usado para informar que os itens podem quebrar em telas menores*/
+ }
+ 
+ #container-cofre h2 { /*Chamamos nossa TAG H2 para estilização*/
+     
+     color: white; /*Cor da letra*/
+     font-size: 30px; /*Tamanho da letra*/
+     text-align: center;
+ }
+ 
+ #container-cofre p { /*Nossa Tag de parágrafo para estilização*/
+     color: white; /*Cor da letra*/
+     font-size: 17px; /*Tamanho da letra*/
+     text-align: center;
+     margin-top: 2rem; /*margem superior*/
+    
+ }
+ 
+ 
+ #container-cofre div span {
+     color: yellow;
+ }
+ 
+ 
+ footer { /*Aqui começamos a estilização do Rodapé*/
+     padding: 13vh; /*Preenchimento do Rodapé*/ 
+     background-color: rgb(29, 28, 28); /*Cor de fundo*/
+     text-align: center; /*Alinhando ao centro*/
+     
+ }
+ 
+ footer img { /*Trabalhando nas IMG dentro do Footer*/
+     width: 13.5rem; /*Largura*/
+     height: 4rem; /*Altura*/
+     margin-top: -5rem; /*Margem superior*/
+     margin-bottom: 20px;
+ }
+ 
+ 
+ .footer-div {
+     display: flex;
+     justify-content: space-between;
+     margin: 20px 0px; 
+ }
+ 
+ 
+ .footer-div a {
+     text-decoration: none;
+     color: white;
+ }
+ .footer-div p {
+     color: rgba(233, 222, 222, 0.523);
+ }
+ 
+ .footer-div a:hover {
+     color: crimson;
+     transition: 0.5s;
+ }  
+
