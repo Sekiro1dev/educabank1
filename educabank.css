@@ -1,3 +1,11 @@
+:root {
+    --font-color: white;
+    --module-size: 1rem;
+    --font-family:helvetica, arial, sans-serif;
+    --primary-color: tomato;
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +15,13 @@
 
 /* Seção do header*/
 header {
-
+  
+    position: sticky; /*utilizando para deixar o menu suspenso*/
+    top: 0; 
+    left: 0;
+    z-index: 999;
     background-color: #617eba;
-    padding: 30px;
+    padding: 3rem;
 
 }
 

@@ -1,19 +1,47 @@
-em (relativo ao elemento-pai)
-A unidade (em) é relativa ao tamanho da fonte do elemento pai 
+(em) (relativo ao elemento-pai)
+A unidade (em) é relativa ao tamanho da fonte do elemento pai
 
-Ou seja: se o elemento PAI tiver " font-size: 16px, Então
-lem = 16px 
+Ou seja: se o elemento PAI tiver "font-size: 16px, então 2em = 32px 
 
-Mas se o elemento pai não for declarado ele pegara a formatação web pois o navegador ainda faz a conta em 16 px
+Mas se o elemento não for declarado, segue o jogo!
+Ainda sim, o navegador fará a conta com base nos 16px.
 
- (rem) (relativo ao elemento raiz=html)
 
- rem significa "root em" ou seja, relativo ao tamanho da fonte do <html>
+(rem)  (Relativo ao elemento raiz=html)
 
- é mais previsível e estável, Porque ignora o tamanho do elemnto-pai.
+rem significa "root em" ou seja, relativo ao tamanho da fonte do <html>.
 
- Quando usar cada uma ?
+é mais previsível e estável, porque ignora o tamanho do elemento-pai.
 
- em = ideal para (Margens internas, espaçamentos adaptáveis dentro de caixas componentes)
+Quando usar cada uma?
+em = ideal para (Margens internas, espaçamentos adaptáveis dentro de caixas/componentes)
 
- rem = ideal para tamanhos de font globais e layount cos
+rem = ideal para tamanhos de font globais e layount consistentes
+
+
+vw = viewport width ele trabalha olhando para a LARGURA/WIDTH da tela em questão
+
+vh = viewport height trabalha olhando para a ALTURA/height da tela em questão 
+
+
+
+
+
+Explicações importantes:
+
+➤ Por que flex?
+Usamos display: flex no .container-header para facilitar o alinhamento horizontal (logo + botão) e a adaptação com flex-direction: column em telas menores.
+
+➤ Por que max-width?
+O max-width: 1200px evita que o conteúdo fique muito esticado em telas grandes e mantém o design centrado com margin: 0 auto. A propriedade max-width define a largura máxima que um elemento pode ocupar. Isso significa que o elemento pode diminuir de tamanho conforme necessário (em telas menores), mas nunca vai ultrapassar o valor definido.
+
+➤ Por que usar media query?
+A @media (max-width: 600px) permite que a estrutura mude para um layout vertical quando a tela for pequena (como no celular), otimizando a usabilidade.
+
+
+➤ Por que usar border-box?
+Evita cálculos complicados de largura.
+
+Ajuda a manter o layout organizado.
+
+É muito usado em layouts responsivos, onde o espaço precisa ser bem controlado
